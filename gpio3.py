@@ -5,8 +5,9 @@ import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 
 #set GPIO numbering mode and define inputs
-wp = 18 #working pin
-rp = 16 #reading pin
+rp = 10 #reading pin
+wp = 12 #working pin
+
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(wp, GPIO.OUT, initial=GPIO.LOW)
@@ -15,10 +16,11 @@ GPIO.setup(rp, GPIO.IN)
 try:
 
     while (True):
-        if GPIO.input(wp)==0:
+        if GPIO.input(rp)==0:
             print("Circuito abierto!")
         else:
             print("Circuito Cerrado")
+            GPIO.output(wp)
 
 finally: #Presionando CTRL + C reproduce esta acción
     GPIO.cleanup()
