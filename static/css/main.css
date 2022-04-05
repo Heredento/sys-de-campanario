@@ -1,0 +1,97 @@
+
+.roboto{
+    font-family: 'Roboto Mono', monospace;
+}
+.bg-light{
+    background-color: #1eecaf;
+    }
+.bg-custom{
+    background-color: rgb(85, 221, 255);
+}
+/*
+Center text
+*/
+
+
+.right {
+    position: absolute;
+    right: 0px;
+}
+
+.center {
+    text-align: center;
+    border: 3px solid green;
+}
+.centered-div{
+    text-align: center;
+    /**border: 1px solid rgb(0, 0, 0);*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  /*
+Center image
+*/
+/*
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  */
+
+  .slider {
+    -webkit-appearance: none;
+    width: 30%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+/*
+<div class="jumbotron text-center"></div>
+<i class="fi fi-br-check"></i>
+<i class="fi fi-rr-music-alt"></i>
+<i class="fi fi-rr-signal-alt-2"></i>
+<i class="fi fi-rr-signal-alt-1"></i>
+<i class="fi fi-rs-bulb"></i>
+<i class="fi fi-br-power"></i>
+<i class="fi fi-rs-computer"></i>
+<i class="fi fi-rs-bulb"></i>
+<i class="fi fi-ss-shield-exclamation"></i>
+<i class="fi fi-rs-computer"></i>
+*/
