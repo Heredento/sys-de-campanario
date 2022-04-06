@@ -12,37 +12,17 @@ def tiempo_musical(t):
     time.sleep((1/4)*t)
 
 
-def play(nota, seleccion_tiempo):
-    if (nota=="C"):
+
+class nm: #notas musicales
+    def C(seleccion):
+
+    
         
 
 
     
 
-def mHzClock(bpm, seleccion):
-    bcs=60/bpm
-    if (seleccion==1):
-        t=bcs*4
-        loop(t)
 
-    elif (seleccion==2):
-        t=bcs*2
-        loop(t)
-
-    elif (seleccion==3):
-        t=bcs*1
-        loop(t)
-
-    elif (seleccion==4):
-        t=bcs*(1/2)
-        loop(t)
-
-    elif (seleccion==5):
-        t=bcs*(1/4)
-        loop(t)
-
-    elif (seleccion==0):
-        print("Seleccion: 0")
 
     
 try:

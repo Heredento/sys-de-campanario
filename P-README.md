@@ -1,0 +1,2 @@
+Pinouts
+https://pinout.xyz/
