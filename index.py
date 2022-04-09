@@ -1,5 +1,6 @@
 from datetime import datetime
 from flask import Flask, render_template
+
 fecha_actual = datetime.now()
 dt_string = fecha_actual.strftime("%d/%m/%Y %H:%M:%S")
 
