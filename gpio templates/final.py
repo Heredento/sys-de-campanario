@@ -7,14 +7,8 @@ GPIO.setmode (GPIO.BOARD)
 
 pines = [8, 10, 12, 16, 18, 22, 24, 26]
 
-GPIO.setup (11,GPIO.OUT)
-
-#GPIO.output(11,True)
-
 tempo = 90
 tps = tempo/60
-
-
 
 C = pines[0]
 D = pines[1]
@@ -28,6 +22,7 @@ C_ = pines[7]
 sc = tps*(1/4)
 redon = tps*4
 conteo=range(len(pines))
+
 #constantes y funciones extra
 
 for i in conteo:
@@ -40,11 +35,11 @@ def allLow(x):
     
 
 def t(x): # Modo de nota
-    time.sleep((4/5)*x)
-    allLow((1/5)*x)
+    time.sleep((6/7)*x)
+    allLow((1/7)*x)
 
 def s(x): # Modo de silencio
-    print("Funcion para apagar todas las salidas aquí jaja")
+    print(f"Silencio: {x}")
     time.sleep(x)
 
 ## "Partitura en código"
@@ -64,7 +59,7 @@ try:
         t(sc)
         GPIO.output(E,True)
         print("MI")
-        GPIO.output(C_,True)
+        GPIO.output(C,True)
         print("DO+")
         t(redon)
 
