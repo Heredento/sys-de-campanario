@@ -44,7 +44,7 @@ def t(x): # Modo de nota
     allLow((1/5)*x)
 
 def s(x): # Modo de silencio
-    print("Silencio: {x}")
+    print(f"Silencio: {x}")
     time.sleep(x)
 
 ## "Partitura en código"
@@ -53,7 +53,7 @@ try:
     for y in conteo:
         GPIO.output(pines[y],True)
         print(f"PIN: {pines[y]} | Indice: {y}")
-        t(redon)
+        t(tps)
     s(redon)
 
     print("Apagando...")
