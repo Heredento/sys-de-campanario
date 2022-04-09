@@ -3,14 +3,18 @@ import RPi.GPIO as GPIO
 import time 
 GPIO.setwarnings(False)
 GPIO.setmode (GPIO.BOARD)
+
+
+pines = [8, 10, 12, 16, 18, 22, 24, 26]
+
 GPIO.setup (11,GPIO.OUT)
 
 #GPIO.output(11,True)
 
-tempo = 120
+tempo = 90
 tps = tempo/60
 
-pines = [8, 10, 12, 16, 18, 22, 24, 26]
+
 
 C = pines[0]
 D = pines[1]
@@ -23,14 +27,19 @@ C_ = pines[7]
 
 sc = tps*(1/4)
 redon = tps*4
-
+conteo=range(len(pines))
 #constantes y funciones extra
+
+
+for i in conteo:
+        GPIO.setup(pines[i], GPIO.OUT)
+
+
 def allLow(x):
-    for i in pines:
+    for i in conteo:
         GPIO.output(pines[i], False)
     time.sleep(x)
     
-
 
 def t(x): # Modo de nota
     time.sleep((4/5)*x)
@@ -47,13 +56,18 @@ try:
         print("Iniciando")
 
         GPIO.output(A,True)
+        print("LA")
         t(sc)
         GPIO.output(G,True)
+        print("SOL")
         t(sc)
         GPIO.output(D,True)
+        print("RE")
         t(sc)
         GPIO.output(E,True)
+        print("MI")
         GPIO.output(C_,True)
+        print("DO+")
         t(redon)
 
     time.sleep(3)
