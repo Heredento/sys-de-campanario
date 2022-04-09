@@ -30,10 +30,8 @@ redon = tps*4
 conteo=range(len(pines))
 #constantes y funciones extra
 
-
 for i in conteo:
         GPIO.setup(pines[i], GPIO.OUT)
-
 
 def allLow(x):
     for i in conteo:
