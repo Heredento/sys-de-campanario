@@ -106,7 +106,7 @@ def mt(x): # Tipo de nota (tiempo), x = redonda, blanca, negra, corchea etc..
 
 def playNota(duracion, *argv): # Funcion para tocar x cantidad de notas + el tipo que es
     for arg in argv:
-        GPIO.output(pines[i], True)
+        GPIO.output(*argv, True)
     mt(duracion)
 
 # Funcion principal, reproduce cantidad notas, configura su tiempo e indica si es o no silencio 
@@ -116,9 +116,3 @@ def play(modo=0, tipo=3, *argv): #*argv: notas a reproducir, usar C, D, E, F.. C
             s(tipo)
         case 1:
             playNota(tipo, *argv)
-        
-
-
-
-
-
