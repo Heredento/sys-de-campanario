@@ -1,7 +1,5 @@
 
-from gpiofunc import play
-from gpiofunc import tempo
-
+from gpiofunc import play, C, D, E, F, G, A, B, C_
 
 play(1, 4, E)
 play(1, 4, G)
