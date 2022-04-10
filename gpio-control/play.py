@@ -21,7 +21,7 @@ A = pines[5]
 B = pines[6]
 C_ = pines[7]
 
-for i in conteo: # lista pines aplica como salida en raspberry 
+for i in conteo: # funcion confifura como salida los pines en la lista 
         GPIO.setup(pines[i], GPIO.OUT)
 
 # Funciones de utilidad principales
@@ -31,6 +31,7 @@ def allLow(x): # 0 Logico en todos los pines de salida de notas
     time.sleep(x)
 
 def s(x): # x = Tipo de silencio
+    #DIOS, ¿porqué no existen switch-case en python? ;-;
     if x == 1:
         y = tps*4
         time.sleep(y)
@@ -61,7 +62,7 @@ def s(x): # x = Tipo de silencio
 def mt(x): # Tipo de nota (tiempo), x = redonda, blanca, negra, corchea etc..
     mH = (7/8)
     mL = (1/8)
-    #Me duele que no existan los switch-case en python
+    # AAAAAAAAAAAAAAAAAAHHHHH
     if x == 1:
         y = tps*4
         time.sleep(mH*y)
