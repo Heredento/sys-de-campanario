@@ -69,6 +69,8 @@ def s(x): # x = Tipo de silencio
 def mt(x): # Tipo de nota (tiempo), x = redonda, blanca, negra, corchea etc..
     
     match x:
+        case 0:
+            pass
         case 1:
             y = tps*4
             time.sleep(mH*y)
