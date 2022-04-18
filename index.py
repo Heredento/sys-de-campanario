@@ -1,14 +1,13 @@
 from datetime import datetime
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from dttime import dt
 
-fecha_actual = datetime.now()
-dt_string = fecha_actual.strftime("%d/%m/%Y %H:%M:%S")
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=["POST", "GET"])
 def home():
-    return render_template('main_page.html')
+    return render_template('main_page.html', hora=str(dt))
 
 @app.route('/serial')
 def serial():
@@ -20,7 +19,12 @@ def credits():
 
 @app.route("/hey")
 def heya():
-    return "Entra <a href='/serial'><button>Entrar</button></a>"
+    return "owo"
 
+#@app.route("/<usr>")
+#def user(usr):
+#    return f"<h1>Hello {usr} | </h1>"
+
+##Entra <a href='/serial'><button>Entrar</button></a>
 if __name__ == '__main__':
     app.run(debug=True)
