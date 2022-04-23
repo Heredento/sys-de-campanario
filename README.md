@@ -1,25 +1,41 @@
 # Sistema de campanario automatizado
-Desarrollo de un sistema de conexión Raspberry-Arduino impulsado por lenguaje de programación C++ y Python.
+Desarrollo de un sistema de conexión Raspberry-Python.
 
 
 ## Idea
-El objetivo principal es desarrollar un sistema que permita automatizar el sistema de configuración de horas cuando existen problemas de electricidad; El reloj se retrasa una cierta cantidad de minutos y deseamos que vuelva a la hora normal sin tener que hacerlo manualmente.
+El objetivo principal:
+    Desarrollar un sistema que permita automatizar el sistema horario del reloj cuando sucedan incovenientes que vuelven los cambios de horas inevitables; El reloj se retrasa o adelanta tiempo y deseamos que vuelva a la hora normal sin tener que hacerlo manualmente.
 
-El objetivo secundario es desarrollar una página web que tenga la función de lectura de estados del raspberry conectado y el arduino a la vez.
-La página web es un sistema de calendario y recordatorio que permite agendar acciones dentro del campanario:
-    1. Tocar el campanario a horas específicas agendadas.
-    2. Reproducir melodías de una octava mediante código de arduino.
+El objetivo secundario es desarrollar una página web que permita agendar eventos y seleccionar partituras-scripts reproducibles en el campanario.
 
-La raspberry se encarga de hostear una página web local dentro de la institución, del mismo modo permite la comunicación directa con Arduino.
-El arduino tiene la función de:
-    1. Funcionar como controlador y protección para relés conectados a las campanas de la institución.
-    2. Ser un de-multiplexor decimal de cuatro entradas a ocho salidas (máximas 15, 7 no utilizadas) que corresponden a las notas musicales
+Metas:
+    1. Reproducir melodías personalizadas en el campanario en horas agendadas.
+    2. Desarrollar un control manual mediante la página web sin necesidad de tocar el hardware.
+    3. Crear una librería para el desarrollo de partituras implementables al campanario mediante scripts.
 
-La página web debe ser  impulsada por código de Python por el módulo de Flask y otros internos. 
-    Qué el código sea orientado mediante Python facilita la comunicación con el Raspberry gracias al módulo RPi como GPIO.
+## Instalación
+En la consola instalar los paquetes presentados dentro consola:
+
+1. RPi.GPIO: exclusivo para el control de pines en Raspberry. NO INSTALAR EN OTROS DISPOSITIVOS EXCEPTO RASPBERRY
+        
+        pip install RPi.GPIO
+
+2. Flask: paquete para desarrollo web
+        
+        pip install Flask
+
+3. schedule: facilita agendar eventos
+        
+        pip install schedule 
+    
+4. psycopg2: base de datos PostgreSQL implementada localmente para guardar events agendados
+        
+        pip install psycopg2
 
 
-## Notas
+## Disclaimer
+
+    El codigo se mantiene en producción y muchas plantillas de apoyo pueden ser encontradas.
     Actuamente en desarrollo.
     Usuario en aprendizaje!
     No sé cómo usar Github apropiadamente.
