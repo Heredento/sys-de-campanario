@@ -1,8 +1,19 @@
 import time
-from gpiofunc import play, C, D, E, F, G, A, B, C_
+import RPi.GPIO as GPIO
+from gpiofunc import play, C, D, E, F, G, A, B, C_, pines, conteo
+
+def interrupcion():
+    print("Partitura interrumpida")
+    GPIO.cleanup()
+
+def utilidad():
+    print("Configuración:")
+    print(f"{pines}")
+    print(f"C, D, E, F, G, A, B, C+")
+    print(f"Empezando script midi..")
 
 try:
-    print(f"Empenzando script midi")
+    utilidad()    
     time.sleep(3)
     play(1, 4, E)
     play(1, 4, G)
@@ -13,11 +24,16 @@ try:
     play(1, 4, G)
     play(1, 3, A)
 
-    for i in range(6):
-        print(f"Terminando en {i}")
+    time.sleep(0.1)
+    for y in range(6,0):
+        print(f"Terminando en {y}")
         time.sleep(1)
+
     GPIO.cleanup()
-finally:
+
+
+except KeyboardInterrupt:
+    print("Partitura interrumpida")
     GPIO.cleanup()
 
 
