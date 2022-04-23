@@ -14,7 +14,13 @@ def allLow(x): # 0 Logico en todos los pines de salida de notas
     time.sleep(x)
 
 try:
-    for y in range(6):
+    for y in range(1, 6):
         print(f"Limpiando en {y}")
         time.sleep(y)
     GPIO.cleanup()
+
+except KeyboardInterrupt:
+    print("Sesión interrumpida")
+# finally:
+#     print("test")
+#     GPIO.cleanup()
