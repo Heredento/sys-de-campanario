@@ -1,4 +1,4 @@
-# Sistema de campanario automatizado
+# Sistema de campanario automatizadoa
 El objetivo principal:
     Desarrollar un sistema que permita automatizar el sistema horario del reloj cuando sucedan incovenientes que vuelven los cambios de horas inevitables; El reloj se retrasa o adelanta tiempo y deseamos que vuelva a la hora normal sin tener que hacerlo manualmente.
 
