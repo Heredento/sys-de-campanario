@@ -1,8 +1,4 @@
 # Sistema de campanario automatizado
-Desarrollo de un sistema de conexión Raspberry-Python.
-
-
-## Idea
 El objetivo principal:
     Desarrollar un sistema que permita automatizar el sistema horario del reloj cuando sucedan incovenientes que vuelven los cambios de horas inevitables; El reloj se retrasa o adelanta tiempo y deseamos que vuelva a la hora normal sin tener que hacerlo manualmente.
 
@@ -14,7 +10,7 @@ Metas:
     3. Crear una librería para el desarrollo de partituras implementables al campanario mediante scripts.
 
 ## Instalación
-En la consola instalar los paquetes presentados dentro consola:
+Instalar los paquetes requeridos dentro consola:
 
 1. RPi.GPIO: exclusivo para el control de pines en Raspberry. NO INSTALAR EN OTROS DISPOSITIVOS EXCEPTO RASPBERRY
         
