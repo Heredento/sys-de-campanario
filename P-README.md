@@ -11,7 +11,8 @@ https://pinout.xyz/
         import gpiofunc
         gpiofunc.tempo=90
 
-En la línea de código ´´´gpiofunc.tempo=90´´´ podemos remplazar 90 por el tempo(BPM) de la partitura real.
+
+En la línea de código ´´gpiofunc.tempo=90´´ podemos remplazar 90 por el tempo(BPM) de la partitura real.
 
 Notas aclaratorias:
     - El campanario sólo puede tocar una octava, es decir las notas, DO, RE, MI, FA, SOL, LA, SI y DO de segunda escala.
