@@ -15,12 +15,15 @@ https://pinout.xyz/
 En la línea de código ``gpiofunc.tempo=90`` podemos remplazar 90 por el tempo(BPM) de la partitura real.
 
 Notas aclaratorias:
-    - El campanario sólo puede tocar una octava, es decir las notas, DO, RE, MI, FA, SOL, LA, SI y DO de segunda escala.
-    [IMPORTANTE] No se pueden usar notas medias, es decir sostenidas o bemoles, sólo las naturales. (Escala de DO Mayor)
-    No se pueden tocar notas consecutivas en tiempos diferentes.
-    Ejemplo:
+- El campanario sólo puede tocar una octava, es decir las notas, DO, RE, MI, FA, SOL, LA, SI y DO de segunda escala.
 
+[IMPORTANTE] 
+No se pueden usar notas medias, es decir sostenidas o bemoles, sólo las naturales. (Escala de DO Mayor)
+No se pueden tocar notas consecutivas en tiempos diferentes.
+Sólo se pueden tocar múltiples notas si tienen el mismo tiempo.
 
+Ejemplo:
 <img src="https://github.com/Heredento/sys-de-campanario/blob/main/static/img/ejemplo-partitura.png?raw=true" width="500">
   
+
 
