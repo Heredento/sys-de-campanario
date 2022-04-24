@@ -1,4 +1,4 @@
-# Sistema de campanario automatizadoa
+# Sistema de campanario automatizado
 El objetivo principal:
     Desarrollar un sistema que permita automatizar el sistema horario del reloj cuando sucedan incovenientes que vuelven los cambios de horas inevitables; El reloj se retrasa o adelanta tiempo y deseamos que vuelva a la hora normal sin tener que hacerlo manualmente.
 
@@ -12,20 +12,16 @@ Metas:
 ## Instalación
 Instalar los paquetes requeridos dentro consola:
 
-1. RPi.GPIO: exclusivo para el control de pines en Raspberry. NO INSTALAR EN OTROS DISPOSITIVOS EXCEPTO RASPBERRY
-        
+1. RPi.GPIO: exclusivo para el control de pines en Raspberry. NO INSTALAR EN OTROS DISPOSITIVOS EXCEPTO RASPBERRY      
         pip install RPi.GPIO
 
-2. Flask: paquete para desarrollo web
-        
+2. Flask: paquete para desarrollo web   
         pip install Flask
 
-3. schedule: facilita agendar eventos
-        
+3. schedule: facilita agendar eventos 
         pip install schedule 
     
 4. psycopg2: base de datos PostgreSQL implementada localmente para guardar events agendados
-        
         pip install psycopg2
 
 
