@@ -20,6 +20,6 @@ Notas aclaratorias:
     Ejemplo:
 
 
-<img src="https://github.com/Heredento/sys-de-campanario/blob/main/static/img/ejemplo-partitura.png?raw=true" height="1000">
+<img src="https://github.com/Heredento/sys-de-campanario/blob/main/static/img/ejemplo-partitura.png?raw=true" width="500">
   
 
