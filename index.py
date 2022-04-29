@@ -1,30 +1,31 @@
 from datetime import datetime
 from flask import Flask, render_template, request
 from dttime import dt
-
+import config
 
 app = Flask(__name__)
 
+@app.route("/register")
+def register():
+    return render_template('registro.html')
+
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+
+
 @app.route('/', methods=["POST", "GET"])
 def home():
-    return render_template('main_page.html', hora=str(dt))
+    return render_template('events.html', hora=str(dt))
 
-@app.route('/serial')
+@app.route('/admin')
 def serial():
-    return render_template('arduino_serial.html')
+    return render_template('admin.html')
 
 @app.route('/credits')
 def credits():
-    return render_template('credits_page.html')
+    return render_template('credits.html')
 
-@app.route("/hey")
-def heya():
-    return "owo"
-
-#@app.route("/<usr>")
-#def user(usr):
-#    return f"<h1>Hello {usr} | </h1>"
-
-##Entra <a href='/serial'><button>Entrar</button></a>
 if __name__ == '__main__':
     app.run(debug=True)
