@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask import Flask, render_template, request
 from dttime import dt
-import config
+#import config
 
 app = Flask(__name__)
 
