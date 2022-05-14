@@ -1,14 +1,14 @@
-from winsound import PlaySound
+import time
+import datetime
+x = datetime.datetime.now()
+print(x)
 
 
-play=True
-def loadScreenIcon():
-    if (play==True):
-        pass
-        #load gif
-    else:
-        pass
-
-
-
+def contarTiempo(correrFuncion):
+    st = time.time()
+    correrFuncion()
+    et = time.time()
+    tEjecucion = round(et-st, 2)
+    print(f"Tiempo en función: {tEjecucion}")
+    return tEjecucion
 

@@ -13,15 +13,19 @@ Metas:
 Instalar los paquetes requeridos dentro consola:
 
 1. RPi.GPIO: exclusivo para el control de pines en Raspberry. NO INSTALAR EN OTROS DISPOSITIVOS EXCEPTO RASPBERRY      
+
         pip install RPi.GPIO
 
 2. Flask: paquete para desarrollo web   
+
         pip install Flask
 
 3. schedule: facilita agendar eventos 
+
         pip install schedule 
     
 4. psycopg2: base de datos PostgreSQL implementada localmente para guardar events agendados
+
         pip install psycopg2
 
 
