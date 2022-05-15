@@ -1,6 +1,6 @@
 from datetime import datetime
 from flask import Flask, render_template, request
-from dttime import dt
+import horaActual as hActual
 #import config
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def login():
 
 @app.route('/', methods=["POST", "GET"])
 def home():
-    return render_template('events.html', hora=str(dt))
+    return render_template('events.html', hora=str(hActual.dt))
 
 @app.route('/admin')
 def serial():
