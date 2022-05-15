@@ -28,4 +28,4 @@ def credits():
     return render_template('credits.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="192.168.0.14", port="2500")
